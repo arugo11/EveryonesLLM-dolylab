@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "everyones-llm-dolylab"
+version = "0.1.0"
+description = "Python project reconstruction of EveryonesLLM Chapters 1-15 for the dolylab workshop"
+readme = "README_workshop.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch==2.6.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
